@@ -1,0 +1,351 @@
+// Файл обнуляющих стилей
+
+
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+body{
+	font-family: Lato;
+}
+
+.header{
+	width: 100%;
+	max-height: 1080px;
+	background: url('../img/about/bg_header_743.jpg');
+	background-size: 100% 100%;
+	padding: 160px 0px;
+
+	&__logo{
+		max-width: 195px;
+		height: 123px;
+		margin: 0px auto;
+	}
+
+	&__text {
+		max-width: 754px;
+		margin: 160px auto 0px auto;
+		color: #fff;
+		text-align: center;
+		position: relative;
+
+		.main {
+			font-size: 33px;
+			font-weight: 900;
+			text-transform: uppercase;
+			letter-spacing: 5.44px;
+			margin: 0px 0px 20px 0px;
+		}
+		.low-text {
+  			font-size: 26px;
+  			font-weight: normal;
+  			letter-spacing: 4.16px;
+  			margin: 0px;
+  			padding: 0px 0px 50px 0px;
+  			&:after{
+				content:'';
+				position: absolute;
+				width: 105px;
+				bottom: 0;
+				height: 2px;
+				left: 50%;
+  				background-color: #fff;
+  				margin: 0px 0px 0px -52.5px;
+			}
+		}
+
+	}
+	&__link-arrow {
+  		margin: 0px auto;
+  		display: block;
+  		max-width: 17px;
+  		max-height: 10px;
+	}
+
+
+}
+
+.link-button {
+  		display: block;
+  		max-width: 182px;
+  		max-height: 47px;
+  		margin: 225px auto 75px auto;
+  		border: 1px solid #fff;
+  		color: #fff;
+  		font-size: 15.5px;
+  		text-align: center;
+  		letter-spacing: 0.93px;
+  		text-transform: uppercase;
+  		padding: 16px 40px 18px 40px;
+	}
+
+nav {
+	max-width: 422px;
+	max-height: 12px;
+	margin: 20px auto 155px;
+
+ 	.menu {
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 15px;
+		font-weight: bold; 
+
+		li a {
+			color: #3c3c3c;
+		}
+
+		.active a {
+			color: #ada074;
+		}
+	}
+}
+
+
+.about {
+	&__body {
+		max-width: 823px;
+		margin: 0px auto 100px;
+	}
+	&__header {
+		margin: 0px 0px 65px 0px;
+	}
+	&__title {
+		margin: 0px 0px 30px 0px;
+	}
+	&__text {
+		max-width: 688px;
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 25.89px;
+		margin: 0px auto;
+	}
+	&__row {
+		display: flex;
+		font-size: 0;
+		margin: 0px -15px;
+	}
+	&__column {
+		padding: 0px 12px;
+		flex: 0 0 33.333%;
+	}
+}
+.title {
+	font-size: 34px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8.95px;
+	position: relative;
+	text-align: center;
+	padding: 0px 0px 30px 0px;
+	&:after{
+		content:'';
+		position: absolute;
+		width: 81px;
+		bottom: 0;
+		height: 1px;
+		left: 50%;
+		background-color: #000;
+		margin: 0px 0px 0px -40.5px;
+	}
+}
+.item-about {
+	&__icon {
+		margin: 0px auto 40px auto;
+		border-radius: 50%;
+		width: 92px;
+		height: 92px;
+		border: 2px solid #f1f1f1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title {
+		text-align: center;
+		color: #000000;
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 3.52px;
+		margin: 0px 0px 35px 0px;
+	}
+	&__text {
+		text-align: center;
+		color: #868585;
+		line-height: 26px;
+		font-weight: 300;
+		font-size: 14px;
+	}
+}
+
+.portfolio {
+	&__body {
+		width: 100%;
+		max-height: 1671px;
+		background: #f3f3f3;
+		padding: 105px 0px 65px 0px;
+	}
+	&__nav{
+		max-width: 294px;
+		max-height: 11px;
+		margin: 50px auto 135px;
+	}
+	&__gallery {
+		max-width: 1105px;
+		height: 1130px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0px auto;
+		.gallery__row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			.gallery__row-block {
+				width: 538px;
+				height: 365px;
+				background: #eaeaea;
+			}
+		}
+	}
+	.black {
+		color: #000;
+		border: 1px solid #000;
+		margin: 65px auto 0px;
+	}
+}
+
+.partners {
+	&__body {
+		width: 100%;
+		height: 390px;
+		background: url('../img/about/bg_header_copy_884.jpg') bottom;
+		background-size: cover;
+		padding: 100px 0px 0px 0px;
+	}
+	&__title {
+		font-size: 30.5px;
+  		font-weight: 300;
+  		letter-spacing: 1.83px;
+  		text-align: center;
+  		color: #fff;
+	}
+	&__list {
+		max-width: 585px;
+		height: 65px;
+		margin: 90px auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__logo {
+		align-self: center
+	}
+}
+
+.contacts {
+	&__body {
+		max-width: 720px;
+		height: 825px;
+		padding: 180px 0px 0px 0px;
+		margin: 0px auto;
+	}
+	&__content {
+		height: 335px;
+		margin-top: 120px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.form {
+		width: 383px;
+		&__top {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin: 0px 0px 80px 0px;
+		}
+		&__label, #send{
+			font-weight: bolder;
+  			letter-spacing: 0.84px;
+  			text-transform: uppercase;
+		}
+		#name, #email, #text{
+  			background-color: #f8f7f7;
+  			margin: 20px 0px 0px 0px;
+  			border-top: 1px solid #000; 
+		}
+		#name, #email {
+			width: 161px;
+			height: 35px;
+		}
+		#text {
+			width: 383px;
+  			height: 118px;
+  			resize: none;
+  			margin: 20px 0px 45px 0px;
+		}
+		#send {
+			background: #fff;
+			margin: 0px 0px 0px 350px;
+			cursor: pointer;
+		}
+	}
+	.info {
+		width: 252px;
+		height: 196px;
+		&__message {
+			line-height: 26px;
+		}
+		&__name {
+			font-weight: 700;
+			margin: 40px 0px 0px 0px;
+		}
+		&__links {
+			margin: 25px 0px 0px 0px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 70px;
+		}
+		&__mail {
+			margin: 15px 0px 0px 0px;
+		}
+		&__mail span {
+			font-weight: 700;
+		}
+	}
+	
+}
+
+.footer {
+	&__body {
+		width: 100%;
+		height: 274px;
+		background-color: #3c3c3c;
+		padding: 50px 0px 0px 0px;
+	}
+	&__logo {
+		width: 122px;
+		height: 78px;
+		margin: 0px auto;
+	}
+	&__links ul {
+		width: 260px;
+		height: 11px;
+		margin: 40px auto 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: #a4a4a4;
+	}
+	&__copyright {
+	
+		color: #6c6c6c;
+		font-weight: 400;
+		margin: 32px auto 0px;
+		text-align: center;
+	}
+}
